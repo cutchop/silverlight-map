@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExsunSilverlightMap", "SilverlightMap\ExsunSilverlightMap.csproj", "{E59DE437-D035-4CAB-838A-F69EE7B279F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightBingMapTest.Web", "SilverlightMap.Web\SilverlightBingMapTest.Web.csproj", "{1125D0EA-1AA0-4AD3-A6F1-0FCFB7E4A2BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E59DE437-D035-4CAB-838A-F69EE7B279F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E59DE437-D035-4CAB-838A-F69EE7B279F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E59DE437-D035-4CAB-838A-F69EE7B279F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E59DE437-D035-4CAB-838A-F69EE7B279F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1125D0EA-1AA0-4AD3-A6F1-0FCFB7E4A2BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1125D0EA-1AA0-4AD3-A6F1-0FCFB7E4A2BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1125D0EA-1AA0-4AD3-A6F1-0FCFB7E4A2BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1125D0EA-1AA0-4AD3-A6F1-0FCFB7E4A2BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

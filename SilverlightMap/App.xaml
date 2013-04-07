@@ -1,0 +1,35 @@
+﻿<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns:local="clr-namespace:ExsunSilverlightMap"
+             x:Class="ExsunSilverlightMap.App">
+    <Application.Resources>
+        <local:TagToNameConverter x:Key="TagToNameConverter" />
+        <ControlTemplate x:Key="PushPinTemplate">
+            <Image Source="{Binding Path=Content,RelativeSource={RelativeSource TemplatedParent}}" Stretch="None" />
+        </ControlTemplate>
+        <ControlTemplate x:Key="PushPinTemplate2">
+            <Ellipse Stroke="{Binding Path=Foreground,RelativeSource={RelativeSource TemplatedParent}}" Fill="White" Opacity="1" StrokeThickness="2" />
+        </ControlTemplate>
+        <ControlTemplate x:Key="PushPinTemplate3">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Source="{Binding Path=Content,RelativeSource={RelativeSource TemplatedParent}}" Stretch="None" />
+                <Border Grid.Row="1" Background="LemonChiffon" BorderThickness="1" BorderBrush="Black">
+                    <TextBlock Text="{Binding Path=Tag,RelativeSource={RelativeSource TemplatedParent},Converter={StaticResource TagToNameConverter}}" Foreground="Black"></TextBlock>
+                </Border>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate x:Key="PushPinTemplate4">
+            <Image Source="{Binding Path=Content,RelativeSource={RelativeSource TemplatedParent}}" Stretch="None" />
+        </ControlTemplate>
+        <LinearGradientBrush x:Key="lineBrush" StartPoint="0.5,0" EndPoint="0.5,1">
+            <GradientStop Color="Yellow" Offset="0.0" />
+            <GradientStop Color="Red" Offset="0.25" />
+            <GradientStop Color="Blue" Offset="0.75" />
+            <GradientStop Color="LimeGreen" Offset="1.0" />
+        </LinearGradientBrush>
+    </Application.Resources>
+</Application>
